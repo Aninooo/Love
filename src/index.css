@@ -1,27 +1,29 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content */
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555; 
 }
 
 
 .zoomable-image {
   width: 100%;
-  height: 400px; /* Adjust the height as needed */
-  object-fit: cover; /* Crop the image to fit the specified height */
+  height: 400px; 
+  object-fit: cover;
   transition: transform 0.3s ease;
-  cursor: pointer; /* Add cursor pointer */
+  cursor: pointer;
 }
 
-
 .zoomable-image:hover {
-  transform: scale(1.05); /* Increase scale on hover */
+  transform: scale(1.05); 
 }
 
 .zoomed-image-container {
@@ -41,15 +43,17 @@ body {
   max-width: 90%;
   max-height: 90%;
 }
+
 .gallery-images {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px; /* Adjust the gap between images as needed */
-  justify-items: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
+  grid-gap: 10px; 
+  justify-items: center; 
+  align-items: center; 
 }
-
-/* index.css */
+.gallery-title {
+  color: white;
+}
 
 .container {
   display: flex;
@@ -57,70 +61,37 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  transition: background-color 0.5s;
 }
-
-/* styles.css */
 
 .title {
-  transition: none !important; /* Disable any transitions */
-  animation: none !important; /* Disable any animations */
+  transition: color 0.3s ease; 
+  color: white;
 }
-
 
 .button {
   background-color: transparent;
-  border: 2px solid red;
-  color: red;
+  border: 2px solid white;
+  color: white;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-
 .button:hover {
-  background-color: red;
-  color: white;
+ background-color: black;
+ color: white;
+ 
 }
-
-.dark-mode-button {
-  width: 100%; /* Make the button span the entire width */
+.back-button {
   background-color: transparent;
-  border: none;
-  color: red;
-  padding: 20px 0; /* Increase padding for better touch target */
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.dark-mode-button:hover {
+  border: 2px solid white;
   color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
-
-.dark-mode {
-  background-color: #222; /* Dark mode background color */
-  color: #fff; /* Dark mode text color */
-}
-
-.light-mode {
-  background-color: #fff; /* Light mode background color */
-  color: #222; /* Light mode text color */
-}
-/* index.css */
-
-h1 {
-  transition: color 0.3s ease; /* Add transition for color change */
-}
-
-.light-mode .container {
-  transition-delay: 0s !important; /* Set transition-delay to 0s in light mode */
-}
-
-
-
-.dark-mode-icon {
-  position: fixed;
-  top: 80px; /* Adjust the distance from the top as needed */
-  right: 100px; /* Adjust the distance from the right as needed */
-  font-size: 32px; /* Adjust the font size to make the icon bigger */
+.back-button:hover {
+  background-color: black;
+  color: white;
 }
