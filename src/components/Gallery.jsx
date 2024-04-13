@@ -21,15 +21,15 @@ function MyGalleryPage() {
   };
 
   const handleBackButtonClick = () => {
-    setShowFrontPage(true); // Set showFrontPage to true to navigate back to FrontPage
+    setShowFrontPage(true); 
   };
 
   const goToGallery = () => {
-    setShowFrontPage(false); // Set showFrontPage to false to navigate to gallery page
+    setShowFrontPage(false); 
   };
 
   if (showFrontPage) {
-    return <FrontPage goToGallery={goToGallery} />; // Pass goToGallery function to FrontPage
+    return <FrontPage goToGallery={goToGallery} />; 
   }
 
   return (
