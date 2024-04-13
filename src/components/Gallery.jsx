@@ -3,7 +3,7 @@ import love1 from '../assets/love1.jpg';
 import love2 from '../assets/love2.jpg';
 import love3 from '../assets/love3.jpg';
 import love4 from '../assets/love4.jpg';
-import FrontPage from './FrontPage'; // Import the FrontPage component
+import FrontPage from './FrontPage'; 
 import '../index.css';
 
 function MyGalleryPage() {
